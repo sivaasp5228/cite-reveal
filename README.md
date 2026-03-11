@@ -2,7 +2,7 @@
 
 ## Project info
 
-**URL**: https://citehackathon2026.dev
+**URL**: https://citehackathon2026.netlify.app
 
 ## How can I edit this code?
 

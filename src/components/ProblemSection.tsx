@@ -23,7 +23,7 @@ const ProblemSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="glass-card-gold p-8 sm:p-12"
+          className="glass-card-gold p-8 mb-8 sm:p-12"
         >
           <h3 className="text-2xl sm:text-3xl font-display font-bold text-accent mb-6">
             Problem Statement 1: Smart College Infrastructure Ticketing & Resolution System
@@ -41,7 +41,7 @@ const ProblemSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.7, delay: 0.2 }}
-          className="glass-card-gold p-8 sm:p-12"
+          className="glass-card-gold p-8 mb-8 sm:p-12"
         >
           <h3 className="text-2xl sm:text-3xl font-display font-bold text-accent mb-6">
             Problem Statement 2: Intelligent Faculty Workload & Timetable Allocat on System

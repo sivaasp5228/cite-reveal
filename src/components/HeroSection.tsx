@@ -28,7 +28,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
-          className="text-5xl sm:text-7xl lg:text-9xl font-display font-black text-gold-gradient gold-glow-text leading-tight"
+          className="text-5xl sm:text-7xl lg:text-9xl font-display font-black text-gold-gradient mt-12 gold-glow-text leading-tight"
         >
           CITE Hackathon
           <span className="block text-3xl sm:text-5xl lg:text-7xl mt-2 text-foreground">2026</span>

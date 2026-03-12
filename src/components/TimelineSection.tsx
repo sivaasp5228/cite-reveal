@@ -3,8 +3,8 @@ import { useRef } from "react";
 
 const events = [
   { date: "March 12", title: "Problem Statement Launch", description: "Challenge revealed to all participants" },
-  { date: "NIL", title: "Development Phase", description: "build the user fiendly prototype matching the sustainability of the problem statements" },
-  { date: "NIL", title: "PPT Submission Deadline", description: "Revealed soon" },
+  { date: "NIL", title: "Development Phase", description: "Revealed soon" },
+  { date: "NIL", title: "Prototype Submission", description: "Revealed soon" },
   { date: "NIL", title: "Final Hackathon", description: "Revealed soon" },
 ];
 

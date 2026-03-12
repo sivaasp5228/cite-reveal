@@ -3,8 +3,8 @@ import { useRef } from "react";
 import { Users, Clock, Code, Upload } from "lucide-react";
 
 const guidelines = [
-  { icon: Users, title: "Team Size", detail: "5-6 members per team" },
-  { icon: Clock, title: "Duration", detail: "Coming Soon" },
+  { icon: Users, title: "Team Size", detail: "3-4 members per team" },
+  { icon: Clock, title: "Timeline", detail: "Coming Soon" },
   { icon: Code, title: "Technologies", detail: "Any language, framework, or cloud platform" },
   { icon: Upload, title: "Submission", detail: "Coming Soon" },
 ];

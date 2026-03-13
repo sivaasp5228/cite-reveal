@@ -14,7 +14,7 @@ const Footer = () => {
           <h4 className="font-display font-bold text-foreground mb-3">Contact</h4>
           <div className="space-y-2 text-muted-foreground">
             <p className="flex items-center gap-2"><Mail size={14} className="text-accent" /> cite@kprcas.ac.in</p>
-            <p className="flex items-center gap-2"><MapPin size={14} className="text-accent" /> CITE Campus, Innovation Block</p>
+            <p className="flex items-center gap-2"><MapPin size={14} className="text-accent" /> AF112, KPRCAS</p>
             <p className="flex items-center gap-2"><PhoneCallIcon size={14} className="text-accent" /> +91 9677400123</p>
           </div>
         </div>

@@ -23,8 +23,10 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-black/80 backdrop-blur-xl border-b border-gray-800/30" : "bg-black"}`}>
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
-        <a href="#" className="flex items-center">
+        <a href="#" className="flex items-center gap-3">
+          <img src="/spotlight.png" alt="Spotlight" className="h-14 w-auto" />
           <img src="/CITE LOGO.png" alt="CITE Hackathon 2026" className="h-8 w-auto" />
+          <img src="/kprcas.png" alt="KPRCAS" className="h-16 w-auto" />
         </a>
 
         {/* Desktop */}
@@ -46,6 +48,10 @@ const Navbar = () => {
       {/* Mobile menu */}
       {mobileOpen && (
         <div className="md:hidden bg-black/95 backdrop-blur-xl border-t border-gray-800/30 px-4 pb-6">
+          <div className="flex items-center gap-3 mb-6">
+            <img src="/CITE LOGO.png" alt="CITE Hackathon 2026" className="h-8 w-auto" />
+            <img src="/spotlight.png" alt="Spotlight" className="h-8 w-auto" />
+          </div>
           {navLinks.map((l) => (
             <a key={l.label} href={l.href} onClick={() => setMobileOpen(false)} className="block py-3 text-sm font-body text-muted-foreground hover:text-accent transition-colors border-b border-border/10">
               {l.label}

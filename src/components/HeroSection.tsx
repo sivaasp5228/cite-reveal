@@ -19,7 +19,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <p className="uppercase tracking-[0.4em] text-accent text-xs sm:text-sm mb-6 font-body font-medium">
+          <p className="uppercase tracking-[0.4em] text-accent text-xs sm:text-sm mb-6 mt-8 font-body font-medium">
             Centre for Innovation and Talent Empowerment
           </p>
         </motion.div>

@@ -7,7 +7,7 @@ const mentors = [
     name: "Mr.K.Naveenraj",
     role: "Developer CITE",
     department: "KPR College of Arts Science and Research",
-    email: "naveenraj.k@kprcas.ac.in",
+    email: "naveenraja.k@kprcas.ac.in",
     phone: "+91 99655 05269",
     image: "/mentor3.jpeg"
   },

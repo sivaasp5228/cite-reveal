@@ -4,12 +4,28 @@ import { Mail, Phone, Star } from "lucide-react";
 
 const mentors = [
   {
+    name: "Mr.K.Naveenraj",
+    role: "Developer CITE",
+    department: "KPR College of Arts Science and Research",
+    email: "naveenraj.k@kprcas.ac.in",
+    phone: "+91 99655 05269",
+    image: "/mentor3.jpeg"
+  },
+  {
     name: "Mr.N.Ganapathi Ram",
     role: "Coordinator CITE",
     department: "KPR College of Arts Science and Research",
     email: "ganapathiram.n@kprcas.ac.in",
     phone: "+91 98765 12345",
     image: "/mentor1.jpeg"
+  },
+  {
+    name: "Mr.K.Praveenraja",
+    role: "Developer CITE",
+    department: "KPR College of Arts Science and Research",
+    email: "praveenraja.k@kprcas.ac.in",
+    phone: "+91 93605 90863",
+    image: "/mentor2.jpeg"
   }
 ];
 
@@ -130,7 +146,7 @@ const CoordinatorSection = () => {
         >
           <div className="glass-card p-6 max-w-2xl mx-auto">
             <p className="text-muted-foreground font-body text-sm">
-              <span className="text-accent font-medium">Need Help?</span> Feel free to reach out to our mentor for assistance with registration, technical queries, or guidance throughout the hackathon journey.
+              <span className="text-accent font-medium">Need Help?</span> Feel free to reach out to our mentors for assistance with registration, technical queries, or guidance throughout the hackathon journey.
             </p>
           </div>
         </motion.div>

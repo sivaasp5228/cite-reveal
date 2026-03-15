@@ -4,7 +4,7 @@ import { Mail, Phone, Star } from "lucide-react";
 
 const mentors = [
   {
-    name: "Mr.K.Naveenraj",
+    name: "Mr.K.Naveenraja",
     role: "Developer CITE",
     department: "KPR College of Arts Science and Research",
     email: "naveenraja.k@kprcas.ac.in",

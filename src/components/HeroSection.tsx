@@ -40,7 +40,7 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-lg sm:text-2xl text-muted-foreground mt-6 tracking-widest font-body font-light"
         >
-          Innovate &bull; Build &bull; Transform
+          &bull; AN INTRA COLLEGE HACKATHON &bull;
         </motion.p>
 
         <motion.div

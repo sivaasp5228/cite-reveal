@@ -50,7 +50,7 @@ const CoordinatorSection = () => {
         </motion.div>
 
         {/* Mentors Section */}
-        <div className="flex justify-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 justify-items-center">
           {mentors.map((mentor, i) => (
             <motion.div
               key={mentor.name}
@@ -67,7 +67,7 @@ const CoordinatorSection = () => {
                 rotateY: 5,
                 transition: { duration: 0.3 }
               }}
-              className="glass-card-gold p-8 max-w-sm w-full border-gold-glow-hover transition-all duration-500"
+              className="glass-card-gold p-4 sm:p-6 lg:p-8 max-w-sm w-full border-gold-glow-hover transition-all duration-500"
             >
               {/* Mentor Image */}
               <motion.div

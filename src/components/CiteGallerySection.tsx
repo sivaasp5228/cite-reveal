@@ -48,7 +48,7 @@ const CiteGallerySection = () => {
         </motion.div>
 
         {/* Achievement Cards Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {achievements.map((achievement, index) => {
             return (
               <motion.div
@@ -68,7 +68,7 @@ const CiteGallerySection = () => {
                 }}
                 className="group relative"
               >
-                <div className="glass-card-gold p-8 h-full border-gold-glow-hover transition-all duration-500">
+                <div className="glass-card-gold p-4 sm:p-6 lg:p-8 h-full border-gold-glow-hover transition-all duration-500">
                   {/* Animated Background Gradient */}
                   <motion.div
                     className={`absolute inset-0 bg-gradient-to-br ${achievement.color} opacity-0 group-hover:opacity-10 rounded-lg transition-opacity duration-500`}
@@ -220,7 +220,7 @@ const CiteGallerySection = () => {
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.8, opacity: 0 }}
             transition={{ duration: 0.3 }}
-            className="relative max-w-4xl max-h-[90vh] w-full"
+            className="relative max-w-7xl max-h-[85vh] sm:max-w-4xl sm:max-h-[90vh] w-full mx-4 sm:mx-auto"
             onMouseEnter={() => setHoveredImage(hoveredImage)}
             onMouseLeave={() => setHoveredImage(null)}
           >

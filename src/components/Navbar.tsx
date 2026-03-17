@@ -22,7 +22,7 @@ const Navbar = () => {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-black/80 backdrop-blur-xl border-b border-gray-800/30" : "bg-black"}`}>
-      <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div className="max-w-6xl mx-auto px-4 py-2 md:py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-2">
           <img src="/spotlight.png" alt="Spotlight" className="h-14 w-auto" />
           <img src="/CITE LOGO.png" alt="CITE Hackathon 2026" className="h-8 w-auto" />

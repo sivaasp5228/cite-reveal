@@ -4,20 +4,20 @@ import { Mail, Phone, Star } from "lucide-react";
 
 const mentors = [
   {
-    name: "Mr.K.Naveenraja",
-    role: "Developer CITE",
-    department: "KPR College of Arts Science and Research",
-    email: "naveenraja.k@kprcas.ac.in",
-    phone: "+91 99655 05269",
-    image: "/mentor3.jpeg"
-  },
-  {
     name: "Mr.N.Ganapathi Ram",
     role: "Coordinator CITE",
     department: "KPR College of Arts Science and Research",
     email: "ganapathiram.n@kprcas.ac.in",
     phone: "+91 98765 12345",
     image: "/mentor1.jpeg"
+  },
+  {
+    name: "Mr.K.Naveenraja",
+    role: "Developer CITE",
+    department: "KPR College of Arts Science and Research",
+    email: "naveenraja.k@kprcas.ac.in",
+    phone: "+91 99655 05269",
+    image: "/mentor3.jpeg"
   },
   {
     name: "Mr.K.Praveenraja",

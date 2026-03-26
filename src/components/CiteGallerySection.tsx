@@ -16,7 +16,7 @@ const achievements = [
     id: 2, 
     title: "TEAM INNOVATRIX",
     description: "Got shortlisted in 36 hrs National Level Hackathon conducted Karpagam Academy of Higher Education",
-    image: "/hacksprint.jpg",
+    image: "/hacksprint.jpeg",
     year: "2026",
     category: "Hackathon",
     color: "from-yellow-500 to-orange-500"

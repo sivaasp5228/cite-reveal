@@ -1,5 +1,7 @@
 import { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
+import { useAuth } from "@/hooks/useAuth";
+import LoginModal from "@/components/auth/LoginModal";
 
 const navLinks = [
   { label: "About", href: "#about" },
@@ -13,6 +15,8 @@ const navLinks = [
 const Navbar = () => {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [showLoginModal, setShowLoginModal] = useState(false);
+  const { isAuthenticated, user, logout, isLoading } = useAuth();
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 50);
@@ -37,6 +41,33 @@ const Navbar = () => {
             </a>
           ))}
           <a href="#register" className="btn-gold !px-5 !py-2 text-sm">Register</a>
+          
+          {/* Login/Logout Button */}
+          {!isLoading && (
+            <>
+              {isAuthenticated ? (
+                <div className="flex items-center gap-3">
+                  <span className="text-sm text-accent">Welcome, {user?.username}</span>
+                  <button 
+                    onClick={() => {
+                      logout();
+                      window.location.href = '/';
+                    }} 
+                    className="btn-gold !px-5 !py-2 text-sm"
+                  >
+                    Logout
+                  </button>
+                </div>
+              ) : (
+                <button 
+                  onClick={() => setShowLoginModal(true)} 
+                  className="btn-gold !px-5 !py-2 text-sm"
+                >
+                  Login
+                </button>
+              )}
+            </>
+          )}
         </div>
 
         {/* Mobile toggle */}
@@ -58,7 +89,44 @@ const Navbar = () => {
             </a>
           ))}
           <a href="#register" onClick={() => setMobileOpen(false)} className="btn-gold !py-2 text-sm mt-4 inline-block">Register</a>
+          
+          {/* Mobile Login/Logout */}
+          {!isLoading && (
+            <>
+              {isAuthenticated ? (
+                <div className="mt-4 pt-4 border-t border-border/10">
+                  <div className="flex items-center justify-between mb-3">
+                    <span className="text-sm text-accent">Welcome, {user?.username}</span>
+                  </div>
+                  <button 
+                    onClick={() => {
+                      logout();
+                      window.location.href = '/';
+                    }} 
+                    className="btn-gold !py-2 text-sm w-full"
+                  >
+                    Logout
+                  </button>
+                </div>
+              ) : (
+                <button 
+                  onClick={() => {
+                    setShowLoginModal(true);
+                    setMobileOpen(false);
+                  }} 
+                  className="btn-gold !py-2 text-sm mt-4 w-full"
+                >
+                  Login
+                </button>
+              )}
+            </>
+          )}
         </div>
+      )}
+
+      {/* Login Modal */}
+      {showLoginModal && (
+        <LoginModal onClose={() => setShowLoginModal(false)} />
       )}
     </nav>
   );

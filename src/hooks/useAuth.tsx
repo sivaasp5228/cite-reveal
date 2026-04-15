@@ -49,7 +49,7 @@ export const AuthProvider = ({ children }: AuthProviderProps) => {
     await new Promise(resolve => setTimeout(resolve, 500));
     
     // Validate credentials
-    if (username === 'admin' && password === 'admin123') {
+    if (username === 'CITEKPRCAS' && password === 'Cite@641407') {
       const userData = { username };
       setUser(userData);
       setIsAuthenticated(true);

@@ -9,10 +9,12 @@ import CiteGallerySection from "@/components/CiteGallerySection";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import ChatbotWidget from "@/components/ChatbotWidget";
+import AnnouncementPopup from "@/components/AnnouncementPopup";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <AnnouncementPopup />
       <Navbar />
       <HeroSection />
       <AboutSection />

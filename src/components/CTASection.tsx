@@ -23,9 +23,11 @@ const CTASection = () => {
             Join hundreds of student innovators and showcase your skills at the most prestigious hackathon of the year.
           </p>
           <div className="mt-10">
-            <button className="btn-gold text-lg font-body">
-              Coming Soon
-            </button>
+            <a href="https://forms.gle/L3JMW72HJaQfBiU58" target="_blank" rel="noopener noreferrer">
+              <button className="btn-gold text-lg font-body">
+                REGISTER NOW
+              </button>
+            </a>
           </div>
         </motion.div>
       </div>
